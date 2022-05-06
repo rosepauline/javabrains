@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.*;
 import org.springframework.cloud.client.loadbalancer.*;
 import org.springframework.cloud.netflix.eureka.*;
+import org.springframework.cloud.netflix.hystrix.dashboard.*;
 import org.springframework.context.annotation.*;
 import org.springframework.http.client.*;
 import org.springframework.web.client.*;
@@ -13,6 +14,7 @@ import org.springframework.web.reactive.function.client.*;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableCircuitBreaker
+@EnableHystrixDashboard
 public class MovieCatalogServiceApplication {
 
 	@Bean
